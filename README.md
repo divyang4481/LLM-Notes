@@ -91,6 +91,22 @@ llama2.c is an educational project that provides an implementation of the LLaMA 
 
 ---
 
+## Sub-3B Models for On-Device Deployment
+
+| Name | Year | Sizes | Primary Group/Affiliation | Publication | Code Repository | HF Repository (Hugging Face) |
+|------|------|-------|---------------------------|-------------|-----------------|---------------|
+| BlueLM-V | 2024 | 2.7B | CUHK, Vivo AI Lab | paper | code | - |
+| PhoneLM | 2024 | 0.5B, 1.5B | BUPT | paper | code | [Hugging Face](https://huggingface.co) |
+| AMD-Llama-135m | 2024 | 135M | AMD | blog | code | [Hugging Face](https://huggingface.co) |
+| SmolLM2 | 2024 | 135M, 360M, 1.7B | Huggingface | - | - | [Hugging Face](https://huggingface.co) |
+| Ministral | 2024 | 3B, ... | Mistral | blog | - | [Hugging Face](https://huggingface.co) |
+| Llama 3.2 | 2024 | 1B, 3B | Meta | blog | code | [Hugging Face](https://huggingface.co) |
+| Gemma 2 | 2024 | 2B, ... | Google | paper blog | code | [Hugging Face](https://huggingface.co) |
+| Apple Intelligence Foundation LMs | 2024 | 3B | Apple | paper | - | - |
+| OpenELM | 2024 | 270M, 450M, 1.08B, 3.04B | Apple | paper | code | [Hugging Face](https://huggingface.co) |
+
+---
+
 ## Considerations for Deployment
 
 - **Hardware Requirements**: Performance can vary based on the device's hardware capabilities. High-end smartphones are more likely to run these models efficiently.
@@ -98,3 +114,4 @@ llama2.c is an educational project that provides an implementation of the LLaMA 
 - **Use Cases**: Tasks like text summarization, sentiment analysis, and personalized content delivery can benefit from on-device LLMs, enhancing privacy and reducing latency.
 
 By selecting and optimizing the appropriate model, it's possible to integrate advanced language understanding capabilities directly into mobile applications, providing users with enhanced experiences without the need for constant internet connectivity.
+
