@@ -5,105 +5,16 @@
 
 As the demand for on-device natural language processing grows, several models have been developed or adapted to operate efficiently on mobile and embedded hardware. Below is a curated list of such models, highlighting their key features and suitability for mobile deployment.
 
-## 1. MobileBERT
-
-**Description**:  
-MobileBERT is a compressed version of the original BERT model, specifically optimized for mobile applications. It maintains performance while significantly reducing size and latency.
-
-- **Model Size**: Approximately 25 million parameters
-- **Use Cases**: Suitable for various natural language processing tasks on mobile devices
-- **Reference**: [MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices](https://arxiv.org/abs/2004.02984)
-
-## 2. DistilBERT
-
-**Description**:  
-DistilBERT is a distilled version of BERT that is smaller, faster, and retains most of BERT's accuracy. It's designed to be efficient while maintaining high performance.
-
-- **Model Size**: Around 66 million parameters
-- **Use Cases**: Effective for tasks like text classification and sentiment analysis on resource-constrained devices
-- **Reference**: [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108)
-
-## 3. TinyBERT
-
-**Description**:  
-TinyBERT is an even more compact version of BERT achieved through knowledge distillation, optimized for mobile and embedded applications.
-
-- **Model Size**: Varies depending on the specific configuration
-- **Use Cases**: Ideal for scenarios where both storage and computational resources are limited
-- **Reference**: [TinyBERT: Distilling BERT for Natural Language Understanding](https://arxiv.org/abs/1909.10351)
-
-## 4. MLC-LLM
-
-**Description**:  
-MLC-LLM is a machine learning compiler and high-performance deployment engine for large language models. It supports various platforms and is built on top of TVM.
-
-- **Platforms**: Android, iOS, and others
-- **Features**: Provides optimized deployment for LLMs on mobile devices
-- **Reference**: [MLC-LLM](https://github.com/mlc-ai/mlc-llm)
-
-## 5. PyTorch ExecuTorch
-
-**Description**:  
-ExecuTorch is a solution for enabling on-device inference capabilities across mobile and edge devices, including wearables, embedded devices, and microcontrollers.
-
-- **Features**: Facilitates the deployment of LLMs on resource-constrained devices
-- **Reference**: [PyTorch ExecuTorch](https://github.com/pytorch/pytorch/wiki/ExecuTorch)
-
-## 6. Google MediaPipe
-
-**Description**:  
-MediaPipe is a suite of libraries and tools that allow developers to quickly apply artificial intelligence and machine learning techniques in applications. It supports Android, iOS, Python, and Web platforms.
-
-- **Features**: Provides tools for efficient deployment of ML models on mobile devices
-- **Reference**: [Google MediaPipe](https://mediapipe.dev/)
-
-## 7. Apple MLX
-
-**Description**:  
-MLX is an array framework for machine learning research on Apple silicon, brought by Apple's machine learning research team. It builds upon lazy evaluation and unified memory architecture.
-
-- **Features**: Optimized for Apple's hardware, facilitating efficient on-device ML model deployment
-- **Reference**: [Apple MLX](https://github.com/apple/mlx)
-
-## 8. HF Swift Transformers
-
-**Description**:  
-HF Swift Transformers is a Swift package that implements a transformers-like API in Swift, enabling the use of transformer models in Swift applications.
-
-- **Features**: Allows integration of transformer models into iOS applications
-- **Reference**: [HF Swift Transformers](https://github.com/huggingface/swift-coreml-transformers)
-
-## 9. Alibaba MNN
-
-**Description**:  
-MNN supports inference and training of deep learning models and is designed for on-device deployment.
-
-- **Features**: Provides tools for efficient deployment of deep learning models on mobile devices
-- **Reference**: [Alibaba MNN](https://github.com/alibaba/MNN)
-
-## 10. llama2.c
-
-**Description**:  
-llama2.c is an educational project that provides an implementation of the LLaMA model in C. It includes an Android port, demonstrating the feasibility of running LLMs on mobile platforms.
-
-- **Features**: Showcases the potential for on-device natural language processing without relying on cloud-based services
-- **Reference**: [llama2.c](https://github.com/karpathy/llama2.c)
-
----
-
 ## Sub-3B Models for On-Device Deployment
 
 | Name | Year | Sizes | Primary Group/Affiliation | Publication | Code Repository | HF Repository (Hugging Face) |
-|------|------|-------|---------------------------|-------------|-----------------|---------------|
-| BlueLM-V | 2024 | 2.7B | CUHK, Vivo AI Lab | paper | code | - |
-| PhoneLM | 2024 | 0.5B, 1.5B | BUPT | paper | code | [Hugging Face](https://huggingface.co) |
-| AMD-Llama-135m | 2024 | 135M | AMD | blog | code | [Hugging Face](https://huggingface.co) |
-| SmolLM2 | 2024 | 135M, 360M, 1.7B | Huggingface | - | - | [Hugging Face](https://huggingface.co) |
-| Ministral | 2024 | 3B, ... | Mistral | blog | - | [Hugging Face](https://huggingface.co) |
-| Llama 3.2 | 2024 | 1B, 3B | Meta | blog | code | [Hugging Face](https://huggingface.co) |
-| Gemma 2 | 2024 | 2B, ... | Google | paper blog | code | [Hugging Face](https://huggingface.co) |
-| Apple Intelligence Foundation LMs | 2024 | 3B | Apple | paper | - | - |
-| OpenELM | 2024 | 270M, 450M, 1.08B, 3.04B | Apple | paper | code | [Hugging Face](https://huggingface.co) |
+|------|------|-------|---------------------------|-------------|-----------------|-----------------------------|
+| [BlueLM-V](https://huggingface.co/vivo-ai-lab/BlueLM-V) | 2024 | 2.7B | CUHK, Vivo AI Lab | [paper](https://arxiv.org/abs/2411.10640) | [code](https://github.com/vivo-ai-lab/BlueLM) | - |
+| [PhoneLM](https://huggingface.co/mllmTeam/PhoneLM-0.5B) | 2024 | 0.5B, 1.5B | BUPT | [paper](https://arxiv.org/abs/2411.05046) | [code](https://github.com/UbiquitousLearning/PhoneLM) | [Hugging Face](https://huggingface.co/mllmTeam/PhoneLM-0.5B) |
+| [AMD-Llama-135m](https://huggingface.co/amd/AMD-Llama-135m) | 2024 | 135M | AMD | [blog](https://community.amd.com/t5/ai/amd-unveils-its-first-small-language-model-amd-135m/ba-p/711368) | [code](https://github.com/AMD-AIG-AIMA/AMD-LLM) | [Hugging Face](https://huggingface.co/amd/AMD-Llama-135m) |
+| [SmolLM2](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9) | 2024 | 135M, 360M, 1.7B | Huggingface | - | - | [Hugging Face](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9) |
+| [Ministral](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410) | 2024 | 3B, ... | Mistral | [blog](https://mistral.ai/news/ministraux/) | - | [Hugging Face](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410) |
+| [Llama 3.2](https://huggingface.co/meta-llama/Llama-3.2-1B) | 2024 | 1B, 3B | Meta | [blog](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/) | [code](https://github.com/meta-llama/llama-models) | [Hugging Face](https://huggingface.co/meta-llama/Llama-3.2-1B) |
 
 ---
 
